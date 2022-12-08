@@ -1,6 +1,9 @@
 {
     "warehouse": "bigquery",
-    "defaultSchema": "dataform",
-    "assertionSchema": "dataform_assertions",
-    "defaultDatabase": "lp-data-warehouse-dev"
+    "defaultSchema": "param_test",
+    "assertionSchema": "param_test_assertions",
+    "defaultDatabase": "lp-data-warehouse-dev",
+    "vars": {
+      "id": "2"
+    }
 }

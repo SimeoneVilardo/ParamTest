@@ -1,0 +1,7 @@
+config {
+    name: "CURRNT_TEST",
+  type: "table"
+}
+
+SELECT * FROM ${ref("TEST")}
+WHERE ID >= ${dataform.projectConfig.vars.id}
