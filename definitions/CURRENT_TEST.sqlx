@@ -3,5 +3,5 @@ config {
   type: "table"
 }
 
-SELECT * FROM ${ref("TEST")}
+SELECT *, "${JSON.parse(dataform.projectConfig.vars.partitions).ANG}", ERROR("Dummy Error") AS PARAM FROM ${ref("TEST")}
 WHERE ID >= ${dataform.projectConfig.vars.id}
